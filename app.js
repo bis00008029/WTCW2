@@ -21,7 +21,7 @@ app.get('/create', (req, res) => {
 
 app.post('/create', (req, res) => {
 	const title = req.body.title
-	const desc = req.body.desc
+	const desc = req.body.description
 
 	if (title.trim() !== '' && desc.trim() !== '') {
 		
@@ -80,6 +80,12 @@ app.get('/notes/:id', (req, res) => {
 	})
 })
 
+
+
+app.delete('/notes/:id', (req, res) => {
+    const id = req.params.id
+
+})
 
 app.listen(7000,err => {
     if (err) console.log(err)

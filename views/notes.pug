@@ -4,7 +4,7 @@ block content
     div.container 
         h1 All posts
 
-        each note in notes  
+        each note in noteList  
             div.note-wrapper 
-                a.note(href='notes/detail')= note
+                a.note(href='notes/' + note.id)= note.title
                 a.delete(href='#') delete
