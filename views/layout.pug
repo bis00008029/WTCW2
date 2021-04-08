@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title Make your blog post 
+        link(rel='stylesheet' href='/static/styles.css') 
+
+    body 
+        header.navbar 
+            h1  
+                a(href='/') Make your blog post
+            ul 
+                li 
+                    a(href='/notes') All posts 
+                li 
+                    a(href='/archive') Archive 
+        main 
+            block content                    
